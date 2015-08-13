@@ -59,7 +59,7 @@
             var writer = new Windows.Storage.Streams.DataWriter(rawSocket.outputStream),
                 bufSize = writer.measureString(data); // Gets the UTF-8 string length.
 
-                writer.writeInt32(bufSize);
+                //writer.writeInt32(bufSize);
                 writer.writeString(data);
 
                 console.log('Sending ', data);
